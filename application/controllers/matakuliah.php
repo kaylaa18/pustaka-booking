@@ -19,8 +19,8 @@ class matakuliah extends CI_Controller
 
         if ($this->form_validation->run() == FALSE) {
             $this->load->view('View-form-matakuliah');
-            echo form_error('kode', '<script>alert("Ada kesalahan pada \'Kode Matakuliah\' cuk!")</script>');
-            echo form_error('nama', '<script>alert("Ada kesalahan pada \'Nama Matakuliah\' cuk!")</script>');
+            echo form_error('kode', '<script>alert("Ada kesalahan pada \'Kode Matakuliah\' ")</script>');
+            echo form_error('nama', '<script>alert("Ada kesalahan pada \'Nama Matakuliah\' ")</script>');
         } else {
             $data = [
                 'kode' => $this->input->post('kode'),
